@@ -1,0 +1,80 @@
+package data.employee;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Scanner;
+import java.util.Set;
+
+public class EmployeeClass {
+	
+	private String id;
+	private String name;
+	private String phone;
+	private String email;
+	
+	/*public EmployeeClass() {
+		
+		this.id = id;
+		this.name = name;
+		this.phone = phone;
+		this.email =email;
+		
+		
+	}*/
+
+	public EmployeeClass(String id, String name, String phone, String email) {
+		super();
+		this.id = id.toLowerCase();
+		this.name = name;
+		this.phone = phone;
+		this.email = email;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public static void loadData() {
+		
+		
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.id+" "+this.name+" "+this.phone+" "+this.email;
+	}
+	
+
+}

@@ -6,8 +6,8 @@ public class EmpClass {
 	public static void main(String[] args) {
 		
 		LoadTextFile load = new LoadTextFile();
-		EmployeeClass emp = new EmployeeClass();
-		EmployeeClass.employeeData();
+		//EmployeeClass emp = new EmployeeClass();
+		//EmployeeClass.employeeData();
 		
 		
 		

@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.LinkedHashMap;
 import java.util.Scanner;
+import java.util.Set;
 import java.io.*;
 
 public class LoadTextFile {
@@ -12,13 +14,22 @@ public class LoadTextFile {
 	
 	 static {
 		try {
-		File file=new File("C:\\Users\\E00802\\Desktop\\employees.info.txt");
-		BufferedReader br = new BufferedReader(new FileReader(file));
+		Scanner scan = new Scanner(new File("C:\\\\Users\\\\E00802\\\\Desktop\\\\employees.info.txt"));
 		String st;
-		while ((st = br.readLine()) != null) {
-			System.out.println(st);
+		LinkedHashMap<String,String>map = new LinkedHashMap<String,String>();
+		while ((scan.hasNext())) {
+			
+			map.put(scan.next(), scan.next());
 			
 		}
+		System.out.println(map);
+		Set keys = map.keySet();
+
+		System.out.println("Keys"+keys);
+		
+
+		System.out.println(" ");
+
 		}
 		catch(FileNotFoundException e) {
 			

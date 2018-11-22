@@ -7,6 +7,8 @@ import java.sql.Connection;
 
 
 public class DemoDb {
+	
+
 
 	public static void main(String[] args) {
 		Connection c = null;
@@ -20,7 +22,7 @@ public class DemoDb {
 			System.out.println();
 			
 			s = c.createStatement();
-			ResultSet Rs = s.executeQuery("SELECT * FROM test.Testtable");
+			ResultSet Rs = s.executeQuery("SELECT * FROM test.Testtable WHERE name like 'S%' AND id='E04' ");
 			while(Rs.next()) {
 				
 				String id = Rs.getString("id");

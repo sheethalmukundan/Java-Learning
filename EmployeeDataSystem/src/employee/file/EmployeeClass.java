@@ -21,6 +21,8 @@ public EmployeeClass(String id,String name,long phone,String email) {
 		
 	}
 //using getters and setters method to access private variable using public
+//get method will give us the value
+//set method will accept the value
 	public String getId() {
 		return id;
 	}
